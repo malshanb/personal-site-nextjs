@@ -1,26 +1,144 @@
-@import "tailwindcss";
+/* Namo Buddaya */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-color: #1a1a1a;
+  --text-color: #dbe4c9;
+  --header-h1-color: #8aa624;
+  --header-p-color: #dbe4c9;
+  --main-h1-color: #fea405;
+  --main-h2-color: #fea405;
+  --link-color: #fea405;
+  --footer-color: #666;
+  --white-text-color: #dbe4c9;
+  --quote-text-color: #8fa31e;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist Mono", monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
+
+header {
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+header h1 {
+  color: var(--header-h1-color);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: var(--header-p-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: var(--main-h1-color);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--main-h2-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--footer-color);
+}
+
+#main-h {
+  font-size: 2.5rem;
+  color: var(--main-h1-color);
+}
+
+.white-text {
+  color: var(--white-text-color);
+}
+
+#quote-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--quote-text-color);
+}
+
+#h-img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    letter-spacing: 2px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #main-h {
+    font-size: 2rem;
+  }
+
+  #quote-text {
+    font-size: 1rem;
+  }
+
+  #h-img {
+    max-width: 80px;
+    height: auto;
+  }
+}
+
+/* Namo Buddaya */
